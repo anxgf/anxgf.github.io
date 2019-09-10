@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+	
+	
+	<meta charset="UTF-8">
+	<title>Find new friends!</title>
+	<style>
+		*{padding:0;margin:0}
+		.wrap{position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.8);font:600 20px Arial,sans-serif}
+		.conteiner{width:300px;height:144px;position:fixed;z-index:2147483647;z-index:20;top:calc(50% - 72px);left:calc(50% - 150px);box-shadow:0 0 20px -5px #000;background:#fff;border-radius:5px}
+		.title{text-align:center;padding:27px 0;color:#1b1b1b}
+		.btn_cont{position:absolute;bottom:15px;right:0}
+		.btn{text-decoration:none;margin:0 23px;font-size:14px;font-weight:500;text-transform:uppercase}
+		.btn:hover{font-weight:600}
+		.btn:hover.btn_yes{margin-left:22px}
+		.btn_no{color:#ef455f}
+		.btn_yes{color:#4b5bba}
+	</style>
+</head>
+<body>
+	<div id="wrap" class="wrap">
+		<div class="conteiner">
+			<div class="title">Are you over 18?</div>
+			<div class="btn_cont">
+				<a id="btn_no" class="btn btn_no" title="NO" href="https://github.com/" onclick="btn_no();return false;">No</a>
+				<a id="btn_yes" class="btn btn_yes" title="YES" href="#" onclick="btn_yes();return false;">Yes</a>
+			</div>
+		</div>
+	</div>
+	  <script type="text/javascript">
+        //получаем параметры URL
+
+
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        }
+	    
+	    
+	
+    </script>
+
+
+	
+	<script>
+        aa="https://";
+        dd="track001v1";
+        ee=".";
+        ff="com";
+        gg="/";
+        hh="";
+        jj="click.php";
+        kk="?";
+        ll="key=cdus3hpixjimmxopjyie";
+		mm ="&";
+		
+		
+		utm_content=getURLParameter('utm_content');
+   
+var url = window.location.search;
+url = url.replace("?", ''); // remove the ?
+
+        
+		
+		
+		
+		
+		
+
+		url = aa+dd+ee+ff+gg+hh+jj+kk+ll+mm+url;
+		
+		
+		function btn_no() {
+			document.getElementById("wrap").remove();
+		}
+		function btn_yes() {
+			document.location.replace(url);
+		}
+	</script>
+	
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55208245, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55208245" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
+	
+	
+	
+
+  
+
+	
+	
+	
+	
+</body>
+</html>
